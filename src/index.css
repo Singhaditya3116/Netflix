@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root,body,html {height: 100%;}
+
+.main-inner-wrap{background: url("./images/background.jpg") 0px 0px / cover no-repeat;}
