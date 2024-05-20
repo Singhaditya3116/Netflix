@@ -1,6 +1,10 @@
 import Login from "./components/Login";
 import Browse from "./components/Browse";
 import { createBrowserRouter,createRoutesFromElements ,Route ,RouterProvider} from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./utils/store";
+
+
 
 
 const router = createBrowserRouter(
@@ -13,8 +17,15 @@ const router = createBrowserRouter(
 )
 
 function App() {
+
+  
+
+
+
   return (
-    <RouterProvider router={router}></RouterProvider>
+    <Provider store={store}>
+      <RouterProvider router={router}></RouterProvider>
+    </Provider>
   );
 }
 
