@@ -12,7 +12,7 @@ const Header = ({ className }) => {
   const dispatch = useDispatch();
 
   const user = useSelector((store) => store.user);
-  console.log("User :", user);
+  // console.log("User :", user);
 
   useEffect(() => {
     // if (!initialLoad) return;

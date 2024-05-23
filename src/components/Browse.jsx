@@ -1,7 +1,10 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 const Browse = () => {
+  useNowPlayingMovies();
+
   return (
     <div className="main flex flex-col justify-between min-h-full">
       <div className="main-inner-wrap flex-1">
