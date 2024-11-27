@@ -1,18 +1,25 @@
+// import {store} from "../utils/store";
+import { useSelector } from "react-redux";
 import Header from "./Header";
 import Footer from "./Footer";
+import ATFContainer from "./ATFContainer";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 
 const Browse = () => {
   useNowPlayingMovies();
+  const movieData = useSelector((store) => store.movies.nowPlayingMovies);
+
+  if(!movieData || !movieData.length){
+    // Shimmer
+    return;
+  }
 
   return (
     <div className="main flex flex-col justify-between min-h-full">
-      <div className="main-inner-wrap flex-1">
+      <div className="main-inner-wra flex-1">
         <Header />
         <main>
-          <div className="container max-w-[482px] mx-auto px-4">
-            <div className="py-12 px-8 md:px-[68px] text-white bg-[rgba(0,0,0,0.7)] rounded"></div>
-          </div>
+          <ATFContainer movie={movieData[0]}/>
         </main>
       </div>
       <Footer />

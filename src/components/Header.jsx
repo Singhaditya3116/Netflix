@@ -12,7 +12,6 @@ const Header = ({ className }) => {
   const dispatch = useDispatch();
 
   const user = useSelector((store) => store.user);
-  // console.log("User :", user);
 
   useEffect(() => {
     // if (!initialLoad) return;
@@ -45,7 +44,7 @@ const Header = ({ className }) => {
 
   return (
     <header>
-      <div className="container max-w-[1312px] mx-auto flex justify-between text-white px-4 py-6">
+      <div className="containe ma-w-[1312px] mx-auto flex justify-between text-white px-4 py-6">
         <Logo className="max-w-[90px] md:max-w-[148px]" />
 
         <div className={className}>
