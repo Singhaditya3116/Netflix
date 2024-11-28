@@ -6,3 +6,4 @@ export const MOVIE_NOW_PLAYING_API_URL = "https://api.themoviedb.org/3/movie/now
 export const MOVIE_TRAILER_API_URL = "https://api.themoviedb.org/3/movie/912649/videos";
 export const MOVIE_POPULAR_API_URL = "https://api.themoviedb.org/3/movie/popular";
 export const MOVIE_UPCOMING_API_URL = "https://api.themoviedb.org/3/movie/upcoming";
+export const MOVIE_TOP_RATED_API_URL = "https://api.themoviedb.org/3/movie/top_rated";
