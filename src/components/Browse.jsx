@@ -1,9 +1,10 @@
 // import {store} from "../utils/store";
 import { useSelector } from "react-redux";
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
 import Footer from "./Footer";
 import ATFContainer from "./ATFContainer";
-import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
+import BTFContainer from "./BTFContainer";
 
 const Browse = () => {
   useNowPlayingMovies();
@@ -20,6 +21,7 @@ const Browse = () => {
         <Header />
         <main>
           <ATFContainer movie={movieData[0]}/>
+          <BTFContainer/>
         </main>
       </div>
       <Footer />

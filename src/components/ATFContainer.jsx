@@ -17,7 +17,7 @@ const ATFContainer = ({movie}) => {
     
     return (
         <div className="relative contain  mx-auto bg-white text-black">
-            <div className="videotitle absolute left-0 top-1/2 -translate-y-1/2  w-full p-4 text-white">
+            <div className="videotitle absolute left-0 top-1/2 -translate-y-1/2  w-full p-4 text-white pointer-events-none">
                 <h1 className="title text-6xl mb-4 font-semibold">{title}</h1>
                 <p className="desc text-2xl max-w-[800px] mb-4">{overview}</p>
                 <button className="cta p-4 text-2xl font-bold bg-green-400 rounded-md">Subscribe</button>
@@ -31,6 +31,8 @@ const ATFContainer = ({movie}) => {
                     allow="autoplay; encrypted-media"
                 ></iframe>
             </div>
+
+            
         </div>
     )
 }
