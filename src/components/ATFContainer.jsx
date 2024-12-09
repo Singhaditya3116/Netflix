@@ -27,7 +27,7 @@ const ATFContainer = ({movie}) => {
                 className="w-full h-full"
                     width="600" 
                     height="600" 
-                    src={`https://www.youtube.com/embed/${trailerVideo?.key}?autoplay=1&mute=1&autohide=1&controls=0&loop=1&modestbranding=1`}
+                    src={`https://www.youtube.com/embed/${trailerVideo?.key}?autoplay=1&mute=1&controls=0&loop=1&playlist=${trailerVideo?.key}`}
                     allow="autoplay; encrypted-media"
                 ></iframe>
             </div>
