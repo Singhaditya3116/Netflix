@@ -7,7 +7,9 @@ const movieSlice = createSlice({
     trailerVideo: [],
     popularMovies:[],
     upcomingMovies:[],
-    topRatedMovies:[]
+    topRatedMovies:[],
+    geminiMovieNameList:[],
+    geminiTmdbMovieDetailsList:[]
   },
   reducers: {
     addNowPlayingMovies: (state, action) => {
@@ -24,7 +26,14 @@ const movieSlice = createSlice({
     },
     addTopRatedMovies: (state, action) => {
       state.topRatedMovies = action.payload;
+    },
+    addGeminiMovieNameList: (state,action) => {
+      state.geminiMovieNameList = action.payload;
+    },
+    addGeminiTmdbMovieDetailsList: (state,action) => {
+      state.geminiTmdbMovieDetailsList = action.payload;
     }
+
   },
 });
 

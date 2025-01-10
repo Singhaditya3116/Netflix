@@ -16,7 +16,7 @@ const useMainTrailer = (movieId) => {
     };
     const data = await fetch(`https://api.themoviedb.org/3/movie/${movieId}/videos`, options);
     const json = await data.json();
-	const trailerMovie = json?.results.find((item) => item?.type === "Trailer");
+	  const trailerMovie = json?.results.find((item) => item?.type === "Trailer");
     return trailerMovie;
   };
   

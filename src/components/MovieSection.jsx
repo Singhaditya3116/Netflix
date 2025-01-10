@@ -9,7 +9,7 @@ const  MovieSection = ({title,movies}) => {
 
     return (
         <div>
-            <h2 className="title text-2xl font-medium mb-4">{title}</h2>
+            <h2 className="title text-2xl font-medium mb-4 text-white">{title}</h2>
             {/* <div className="cards-wrapper flex overflow-y-auto"> */}
             <Swiper navigation={true} loop={true} breakpoints={{
           767: {
