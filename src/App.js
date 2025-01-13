@@ -1,5 +1,6 @@
 import Login from "./components/Login";
 import Browse from "./components/Browse";
+import MovieRecommendation from "./components/MovieRecommendation";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./utils/store";
@@ -9,6 +10,7 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<Login />} />
       <Route path="/browse" element={<Browse />} />
+      <Route path="/movie" element={<MovieRecommendation/>} />
     </Route>
   )
 );

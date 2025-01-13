@@ -44,12 +44,12 @@ const Header = ({ className }) => {
 
   return (
     <header>
-      <div className="containe ma-w-[1312px] mx-auto flex justify-between text-white px-4 py-6">
+      <div className="containe max-wl-[1312px] mx-auto flex justify-between font-netflix text-white px-4 py-4 md:py-6">
         <Logo className="max-w-[90px] md:max-w-[148px]" />
 
         <div className={className}>
           <span className="mr-2 font-semibold">{user?.displayName}</span>
-          <button className="px-3 py-2 bg-[#e50914] rounded cursor-pointer" onClick={logoutHandler}>
+          <button className="px-3 py-2 bg-[#e50914] font-medium rounded cursor-pointer" onClick={logoutHandler}>
             Logout
           </button>
         </div>
