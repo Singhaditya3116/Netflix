@@ -2,7 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    @font-face {
+        font-family: "NetflixSans";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("../src/fonts/NetflixSans_W_Rg.woff2") format("woff2");
+    }
+    @font-face {
+        font-family: "NetflixSans";
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url("../src/fonts/NetflixSans_W_Md.woff2") format("woff2");
+    }
+    @font-face {
+        font-family: "NetflixSans";
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("../src/fonts/NetflixSans_W_Bd.woff2") format("woff2");
+    }
+}
+
 
 #root,body,html {height: 100%;}
-
 .main-inner-wrap{background: url("./images/background.jpg") 0px 0px / cover no-repeat;}
+.yt-player{pointer-events: none;user-select: none;}
+
+
+
+

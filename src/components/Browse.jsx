@@ -17,7 +17,7 @@ const Browse = () => {
 
   return (
     <div className="main flex flex-col justify-between min-h-full">
-      <div className="main-inner-wra flex-1">
+      <div className="main-inner-wra flex-1 bg-black text-white">
         <Header />
         <main>
           <ATFContainer movie={movieData[0]}/>

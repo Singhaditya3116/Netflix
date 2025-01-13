@@ -109,11 +109,11 @@ const Login = () => {
       <div className="main-inner-wrap flex-1">
         <Header className="hidden" />
         <main>
-          <div className="container max-w-[482px] mx-auto px-4">
-            <div className="py-12 px-8 md:px-[68px] text-white bg-[rgba(0,0,0,0.7)] rounded">
+          <div className="container max-w-full md:max-w-[482px] mx-auto px-4">
+            <div className="py-6 px-4 mt-6 md:mt-0 md:px-[68px] font-netflix text-white bg-[rgba(0,0,0,0.7)] rounded">
               <form>
                 <div className="form-content flex flex-col">
-                  <h2 className="text-3xl mb-7">{isSignIn ? "Sign In" : "Sign Up"}</h2>
+                  <h2 className="font-medium text-2xl md:text-3xl mb-4 md:mb-6">{isSignIn ? "Sign In" : "Sign Up"}</h2>
                   {!isSignIn && (
                     <>
                       <input placeholder="Name" className="mb-2 py-3 px-4 bg-transparent border border-[##808080b3] rounded" value={name} onChange={handleNameChange} />

@@ -14,7 +14,7 @@ export const BTFContainer = () => {
     const movies = useSelector((store) => store.movies);
 
     return (
-        <div className="bg-black text-white">
+        <div className="relative -top-[60px]  px-4  mx-auto bg-black text-white">
             <MovieSection title="Popular Movies" movies={movies.popularMovies}/>
             <MovieSection title="Top Rated Movies" movies={movies.topRatedMovies}/>
             <MovieSection title="Upcoming Movies" movies={movies.upcomingMovies}/>
