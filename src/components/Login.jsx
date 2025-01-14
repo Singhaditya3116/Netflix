@@ -34,15 +34,22 @@ const Login = () => {
       if (!isSignIn && !isNameValid) {
         setIsNameValid(false);
         return false;
+      }else{
+        setIsNameValid(true);
       }
 
       if (!isEmailValid) {
         setIsEmailValid(false);
         return false;
+      }else{
+        setIsEmailValid(true);
       }
+
       if (!isPasswordValid) {
         setIsPasswordValid(false);
         return false;
+      }else{
+        setIsPasswordValid(true);
       }
 
       return true;

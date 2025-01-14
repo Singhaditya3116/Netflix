@@ -30,6 +30,8 @@
 #root,body,html {height: 100%;}
 .main-inner-wrap{background: url("./images/background.jpg") 0px 0px / cover no-repeat;}
 .yt-player{pointer-events: none;user-select: none;}
+input:-webkit-autofill {background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: #FFF;box-shadow: 0 0 0px 1000px transparent inset;transition: background-color 5000s ease-in-out 0s;}
+  
 
 
 
